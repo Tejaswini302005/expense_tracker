@@ -1,0 +1,10 @@
+CREATE DATABASE expense_tracker;
+
+\c expense_tracker
+
+CREATE TABLE expenses (
+  id SERIAL PRIMARY KEY,
+  description VARCHAR(255),
+  amount DECIMAL(10,2),
+  date DATE
+);
